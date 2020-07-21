@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SWAPI</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <div class="search">
+            <div class="search_form"><label>Поиск персонажа: <input type="text" class="person_search" id="person_search_input"> </label>
+            <select class="search-select" name="search-select">
+                <option value="people">Персонаж</option>
+                <option value="starships">Корабль</option>
+                <option value="planets">Планета</option>
+            </select> 
+            <button id="search_request_btn" class="button">Найти</button></div>
+            <ul class="search_result">
+            </ul>
+        </div>
+        <div class="person_data">
+            <div>Имя: <span id="name"></div>
+            <div>Рост: <span id="height"></div>
+            <div>Вес: <span id="mass"></div>
+            <div>Год рождения: <span id="birth_year"></div>
+            <div>В скольки фильмах появлялся: <span id="films_count"></div>
+        </div>
+    </div>
+</body>
+</html>
